@@ -13,6 +13,7 @@
 		E70F91D820D8E741004B7224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70F91D720D8E741004B7224 /* Assets.xcassets */; };
 		E70F91DB20D8E741004B7224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70F91D920D8E741004B7224 /* LaunchScreen.storyboard */; };
 		E70F91E620D8E741004B7224 /* ZoomImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F91E520D8E741004B7224 /* ZoomImageTests.swift */; };
+		E70F91F120D8F3D9004B7224 /* hienhihi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F91F020D8F3D9004B7224 /* hienhihi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E70F91E120D8E741004B7224 /* ZoomImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZoomImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70F91E520D8E741004B7224 /* ZoomImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomImageTests.swift; sourceTree = "<group>"; };
 		E70F91E720D8E741004B7224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70F91F020D8F3D9004B7224 /* hienhihi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hienhihi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E70F91D020D8E741004B7224 /* AppDelegate.swift */,
 				E70F91D220D8E741004B7224 /* ViewController.swift */,
+				E70F91F020D8F3D9004B7224 /* hienhihi.swift */,
 				E70F91D420D8E741004B7224 /* Main.storyboard */,
 				E70F91D720D8E741004B7224 /* Assets.xcassets */,
 				E70F91D920D8E741004B7224 /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70F91F120D8F3D9004B7224 /* hienhihi.swift in Sources */,
 				E70F91D320D8E741004B7224 /* ViewController.swift in Sources */,
 				E70F91D120D8E741004B7224 /* AppDelegate.swift in Sources */,
 			);

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomImage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL7-3s-XrH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zozo" translatesAutoresizingMaskIntoConstraints="NO" id="mlQ-Av-nTH">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="93"/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="mlQ-Av-nTH" firstAttribute="bottom" secondItem="kL7-3s-XrH" secondAttribute="bottom" id="8PG-Qu-I3y"/>
+                                    <constraint firstItem="mlQ-Av-nTH" firstAttribute="top" secondItem="kL7-3s-XrH" secondAttribute="top" id="OKd-C3-5yI"/>
+                                    <constraint firstItem="mlQ-Av-nTH" firstAttribute="trailing" secondItem="kL7-3s-XrH" secondAttribute="trailing" id="qmV-Zb-mAb"/>
+                                    <constraint firstItem="mlQ-Av-nTH" firstAttribute="leading" secondItem="kL7-3s-XrH" secondAttribute="leading" id="zC5-91-teX"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uCS-Yi-KQ6"/>
+                                    <outletCollection property="gestureRecognizers" destination="vXS-ML-oY9" appends="YES" id="gk4-dm-4gt"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kL7-3s-XrH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BXH-3D-Gf5"/>
+                            <constraint firstItem="kL7-3s-XrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pco-kd-cDh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kL7-3s-XrH" secondAttribute="bottom" id="cQ1-Nn-auU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kL7-3s-XrH" secondAttribute="trailing" id="kDw-xe-4Lb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="mlQ-Av-nTH" id="uis-th-qLY"/>
+                        <outlet property="imageViewConstraintsBottom" destination="8PG-Qu-I3y" id="Thk-Tc-NDV"/>
+                        <outlet property="imageViewConstraintsLeading" destination="zC5-91-teX" id="Fcn-7O-Utg"/>
+                        <outlet property="imageViewConstraintsTop" destination="OKd-C3-5yI" id="Cex-pa-Unu"/>
+                        <outlet property="imageViewConstraintsTrailing" destination="qmV-Zb-mAb" id="SDY-g9-Tmj"/>
+                        <outlet property="scollView" destination="kL7-3s-XrH" id="zw9-UX-U2H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="vXS-ML-oY9"/>
             </objects>
+            <point key="canvasLocation" x="-58" y="30"/>
+        </scene>
+        <!--Hienhihi-->
+        <scene sceneID="4ab-Xe-XXn">
+            <objects>
+                <viewController id="8OI-EV-lrQ" customClass="hienhihi" customModule="ZoomImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSp-kb-93T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K39-OK-F7F">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kurumi" translatesAutoresizingMaskIntoConstraints="NO" id="PM6-Wc-dkB">
+                                        <rect key="frame" x="0.0" y="0.0" width="960" height="600"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PM6-Wc-dkB" secondAttribute="bottom" id="0qF-8T-9EW"/>
+                                    <constraint firstItem="PM6-Wc-dkB" firstAttribute="leading" secondItem="K39-OK-F7F" secondAttribute="leading" id="b7A-aA-2MM"/>
+                                    <constraint firstItem="PM6-Wc-dkB" firstAttribute="top" secondItem="K39-OK-F7F" secondAttribute="top" id="h31-Ya-Xgd"/>
+                                    <constraint firstAttribute="trailing" secondItem="PM6-Wc-dkB" secondAttribute="trailing" id="xdt-rL-Kkk"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="8OI-EV-lrQ" id="VZk-Xf-XI6"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K39-OK-F7F" firstAttribute="leading" secondItem="p3g-uL-kHi" secondAttribute="leading" id="7L4-Dr-1Wm"/>
+                            <constraint firstItem="K39-OK-F7F" firstAttribute="top" secondItem="p3g-uL-kHi" secondAttribute="top" id="FD9-Lo-ovH"/>
+                            <constraint firstItem="p3g-uL-kHi" firstAttribute="bottom" secondItem="K39-OK-F7F" secondAttribute="bottom" id="U33-5u-JU6"/>
+                            <constraint firstItem="p3g-uL-kHi" firstAttribute="trailing" secondItem="K39-OK-F7F" secondAttribute="trailing" id="e6w-iH-UXD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p3g-uL-kHi"/>
+                    </view>
+                    <connections>
+                        <outlet property="images" destination="PM6-Wc-dkB" id="d23-Vc-yYD"/>
+                        <outlet property="scrollView" destination="K39-OK-F7F" id="J6A-c3-Dvq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydc-7C-DX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Kurumi" width="960" height="600"/>
+        <image name="Zozo" width="135" height="93"/>
+    </resources>
 </document>
